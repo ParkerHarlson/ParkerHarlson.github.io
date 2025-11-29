@@ -1,6 +1,6 @@
 lsi: false
 safe: true
-source: [ParkerHarlson.github.io]
+source: ParkerHarlson.github.io
 incremental: false
 highlighter: rouge
 gist:
