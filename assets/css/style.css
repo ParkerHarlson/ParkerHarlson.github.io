@@ -136,7 +136,7 @@ body {
   background: transparent;
   color: #e5e7eb;
   padding: 6px 18px;
-  border-radius: 999px;      /* pill style */
+  border-radius: 999px;
   cursor: pointer;
   font-size: 0.9rem;
   text-transform: lowercase;
@@ -144,7 +144,7 @@ body {
 }
 
 .navbar-link.active {
-  background: rgba(79, 70, 229, 1);  /* bright pill */
+  background: rgba(79, 70, 229, 1);
   color: #f9fafb;
 }
 
@@ -316,7 +316,7 @@ p {
 }
 
 .project-link:hover {
-  background: rgba(79, 70, 229, 0.8);          /* same as contact-button-link:hover */
+  background: rgba(79, 70, 229, 0.8);
   border-color: rgba(129, 140, 248, 0.7);
   transform: translateY(-1px);
 }
