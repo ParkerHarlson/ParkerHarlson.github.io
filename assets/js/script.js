@@ -12,11 +12,12 @@ window.addEventListener("DOMContentLoaded", () => {
       minWidth: 200.0,
       scale: 1.0,
       scaleMobile: 1.0,
-      color: 0x4f46e5,
+      color: 0x705cff,
       backgroundColor: 0x050816,
-      points: 10.0,
-      maxDistance: 22.0,
-      spacing: 18.0
+      points: 14.0,
+      maxDistance: 24.0,
+      spacing: 14.0,
+      showDots: true
     });
   }
 
