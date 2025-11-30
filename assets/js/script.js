@@ -1,8 +1,7 @@
-// Vanta background
 let vantaEffect = null;
 
 window.addEventListener("DOMContentLoaded", () => {
-  // init VANTA.NET if available
+  // Init VANTA.NET if available
   if (window.VANTA && window.VANTA.NET) {
     vantaEffect = window.VANTA.NET({
       el: "#vanta-background",
@@ -21,7 +20,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // nav switching
+  // Nav switching
   const navButtons = document.querySelectorAll(".navbar-link");
   const pages = document.querySelectorAll(".page");
 
@@ -29,11 +28,9 @@ window.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => {
       const target = btn.getAttribute("data-nav-link");
 
-      // update active nav
       navButtons.forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
 
-      // update active page
       pages.forEach((page) => {
         if (page.getAttribute("data-page") === target) {
           page.classList.add("active");
@@ -45,7 +42,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// optional: clean up Vanta on unload
+// optional cleanup
 window.addEventListener("beforeunload", () => {
   if (vantaEffect && vantaEffect.destroy) {
     vantaEffect.destroy();

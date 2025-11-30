@@ -12,7 +12,7 @@ body {
   background-color: #050816;
 }
 
-/* vanta bg behind everything */
+/* vanta background */
 #vanta-background {
   position: fixed;
   inset: 0;
@@ -39,11 +39,11 @@ body {
 
 /* sidebar */
 .sidebar {
-  background: rgba(10, 15, 30, 0.95);
+  background: rgba(10, 15, 30, 0.96);
   border-radius: 16px;
   padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
 }
 
 .avatar-box {
@@ -112,7 +112,7 @@ body {
 
 /* navbar */
 .navbar {
-  background: rgba(10, 15, 30, 0.95);
+  background: rgba(10, 15, 30, 0.96);
   border-radius: 16px;
   padding: 10px 16px;
   margin-bottom: 16px;
@@ -154,13 +154,35 @@ body {
 }
 
 .section {
-  background: rgba(10, 15, 30, 0.95);
+  background: rgba(10, 15, 30, 0.96);
   border-radius: 16px;
   padding: 20px;
   margin-bottom: 16px;
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+/* card hover like examples */
+.card {
+  background:
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.16), transparent 55%),
+    rgba(10, 15, 30, 0.98);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease,
+    background 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+  border-color: rgba(96, 165, 250, 0.5);
+  background:
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.24), transparent 60%),
+    rgba(10, 15, 30, 0.99);
+}
+
+/* headings & text */
 .h2 {
   margin: 0 0 12px;
   font-size: 1.25rem;
@@ -200,23 +222,19 @@ p {
   gap: 10px;
 }
 
-.blog-post {
+.blog-post,
+.timeline-item,
+.project-item {
   padding: 10px 12px;
   border-radius: 10px;
-  background: rgba(15, 23, 42, 0.9);
-}
-
-.timeline-item {
-  padding: 10px 12px;
-  border-radius: 10px;
-  background: rgba(15, 23, 42, 0.9);
+  background: rgba(15, 23, 42, 0.95);
 }
 
 /* skills */
 .skills-item {
-  padding: 10px 12px;
+  padding: 8px 10px;
   border-radius: 10px;
-  background: rgba(15, 23, 42, 0.9);
+  background: rgba(15, 23, 42, 0.95);
 }
 
 .title-wrapper {
@@ -227,7 +245,7 @@ p {
 }
 
 .skill-progress-bg {
-  height: 6px;
+  height: 4px;
   border-radius: 999px;
   background: rgba(55, 65, 81, 0.9);
   overflow: hidden;
@@ -236,15 +254,34 @@ p {
 .skill-progress-fill {
   height: 100%;
   border-radius: 999px;
-  background: linear-gradient(90deg, #4f46e5, #22d3ee);
+  background: linear-gradient(90deg, #0ea5e9, #6366f1);
 }
 
-/* services / certifications */
-.service-item,
-.project-item {
-  padding: 10px 12px;
-  border-radius: 10px;
-  background: rgba(15, 23, 42, 0.9);
+/* certifications as chips */
+.chip-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  font-size: 0.85rem;
+  color: #e5e7eb;
+  cursor: default;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+.chip:hover {
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  border-color: transparent;
+  transform: translateY(-1px);
 }
 
 /* responsive */
