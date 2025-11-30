@@ -15,8 +15,8 @@ window.addEventListener("DOMContentLoaded", () => {
       color: 0x705cff,
       backgroundColor: 0x151515,
       points: 4.0,
-      maxDistance: 45.0,
-      spacing: 34.0,
+      maxDistance: 14.0,
+      spacing: 20.0,
       showDots: true, 
     });
   }
