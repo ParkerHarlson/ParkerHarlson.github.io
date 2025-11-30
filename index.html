@@ -23,7 +23,7 @@
       <aside class="sidebar">
         <div class="sidebar-info">
           <figure class="avatar-box">
-            <!-- make sure this path + filename matches your actual image -->
+            <!-- make sure filename matches your image -->
             <img src="assets/images/self.png" alt="Parker Harlson" class="profile-img" width="120" height="120">
           </figure>
 
@@ -34,21 +34,21 @@
         </div>
 
         <section class="contact-buttons-container" aria-label="Contact">
-          <ul class="contact-buttons-list">
+          <ul class="contact-buttons-list vertical-buttons">
             <li class="contact-button-item">
-              <a href="https://github.com/ParkerHarlson" target="_blank" rel="noopener" class="contact-button-link">
+              <a href="https://github.com/ParkerHarlson" target="_blank" rel="noopener" class="contact-button-link contact-button-pill">
                 <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
                 <span>GitHub</span>
               </a>
             </li>
             <li class="contact-button-item">
-              <a href="https://www.linkedin.com/in/parkerharlson" target="_blank" rel="noopener" class="contact-button-link">
+              <a href="https://www.linkedin.com/in/parkerharlson" target="_blank" rel="noopener" class="contact-button-link contact-button-pill">
                 <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
                 <span>LinkedIn</span>
               </a>
             </li>
             <li class="contact-button-item">
-              <a href="mailto:YOUR_EMAIL_HERE" class="contact-button-link">
+              <a href="mailto:YOUR_EMAIL_HERE" class="contact-button-link contact-button-pill">
                 <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
                 <span>Email</span>
               </a>
@@ -60,46 +60,23 @@
 
     <!-- MAIN CONTENT -->
     <div class="main-content">
-      <!-- NAVBAR -->
+      <!-- NAVBAR (About is primary tab) -->
       <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link="home">home</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="about">about</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="projects">projects</button>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- HOME -->
-      <article class="page home active" data-page="home">
-        <section class="section card">
-          <h2 class="h2">What’s New</h2>
-          <ul class="blog-posts-list">
-            <li class="blog-post">
-              <h3 class="h3">Cloud Honeypot Lab on GCP</h3>
-              <p>
-                Deployed a T-Pot honeypot in Google Cloud, collected attack telemetry, and analyzed SSH / web attacks
-                to understand common techniques and sources.
-              </p>
+        <div class="navbar-inner">
+          <span class="navbar-title">About</span>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link="about">about</button>
             </li>
-            <li class="blog-post">
-              <h3 class="h3">Home SOC Detection Lab</h3>
-              <p>
-                Built a mini-SOC lab with centralized logging, basic detections, and threat-hunting playbooks based on
-                simulated endpoint attacks.
-              </p>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link="projects">projects</button>
             </li>
           </ul>
-        </section>
-      </article>
+        </div>
+      </nav>
 
-      <!-- ABOUT -->
-      <article class="page about" data-page="about">
+      <!-- ABOUT (default page) -->
+      <article class="page about active" data-page="about">
         <!-- About Me -->
         <section class="section card">
           <h2 class="h2">About Me</h2>
@@ -118,14 +95,48 @@
           <h3 class="h3">Education</h3>
           <ul class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4">Western Governors University</h4>
-              <span>Bachelor of Science – Cyber Security and Information Assurance.</span>
-              <p>2024 - 2025</p>
+              <h4 class="h4">B.S. Cybersecurity</h4>
+              <span>Western Governors University | 2024 — 2025</span>
+              <p>Bachelor of Science – Cyber Security and Information Assurance.</p>
             </li>
           </ul>
         </section>
 
-        <!-- Certifications (chips) -->
+        <!-- Technical Skills -->
+        <section class="section card">
+          <h3 class="h3">Technical Skills</h3>
+          <ul class="skills-list">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h4 class="h5">Threat Hunting & DFIR</h4>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h4 class="h5">SIEM / EDR</h4>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h4 class="h5">Cloud & Honeypots</h4>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Certifications -->
         <section class="section card">
           <h3 class="h3">Certifications</h3>
           <ul class="chip-list">
@@ -137,40 +148,6 @@
             <li class="chip">CompTIA A+</li>
             <li class="chip">ITIL 4 Foundation</li>
             <li class="chip">LPI Linux Essentials</li>
-          </ul>
-        </section>
-
-        <!-- Technical Skills -->
-        <section class="section card">
-          <h3 class="h3">Technical Skills</h3>
-          <ul class="skills-list">
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h4 class="h5">SIEM / EDR</h4>
-                <data value="80">80%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h4 class="h5">Cloud & Honeypots</h4>
-                <data value="75">75%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h4 class="h5">Threat Hunting & DFIR</h4>
-                <data value="70">70%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-            </li>
           </ul>
         </section>
 
@@ -222,44 +199,3 @@
       <article class="page projects" data-page="projects">
         <section class="section card">
           <h2 class="h2">Projects</h2>
-          <ul class="projects-list">
-            <li class="project-item">
-            <a href="https://github.com/ParkerHarlson/Elastic-Stack-Advanced-Threat-Detection-and-Response" target="_blank" rel="noopener"  class="project-link">
-              <h3 class="h3">Elastic Stack: Advanced Threat Detection and Response</h3>
-              <p>
-                Simulated a real-world attack and endpoint detection and response scenario using virtual machines, Sliver C2 framework and LimaCharlie EDR.
-              </p>
-              </a>
-            </li>
-            <li class="project-item">
-            <a href="https://github.com/ParkerHarlson/EDR-Attack-and-Defense" target="_blank" rel="noopener"  class="project-link">
-              <h3 class="h3">EDR Attack and Defense</h3>
-              <p>
-                This lab simulates a real-world cyber attack and endpoint detection and response scenario. I use virtual machines to represent both the attacker and victim systems. The attack machine deploys 'Sliver' as a C2 framework to target a Windows endpoint, while 'LimaCharlie' is employed as the EDR solution on the victim machine to detect and respond to the threat.
-              </p>
-              </a>
-            </li>
-            <li class="project-item">
-            <a href="https://github.com/ParkerHarlson/Wazuh-SIEM" target="_blank" rel="noopener"  class="project-link">
-              <h3 class="h3">Cloud-Based Security Monitoring with Wazuh</h3>
-              <p>
-                In this project, I demonstrated proficiency in cybersecurity and cloud server management by deploying a comprehensive security monitoring solution using Wazuh on a Linode cloud server.
-              </p>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-    </div>
-  </main>
-
-  <!-- JS LIBS + YOUR SCRIPT (order matters) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
-
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-  <script src="assets/js/script.js"></script>
-</body>
-</html>

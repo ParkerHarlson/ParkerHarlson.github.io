@@ -42,7 +42,7 @@ body {
   background: rgba(10, 15, 30, 0.96);
   border-radius: 16px;
   padding: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(31, 41, 55, 1);
   backdrop-filter: blur(10px);
 }
 
@@ -86,6 +86,12 @@ body {
   gap: 8px;
 }
 
+.vertical-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .contact-button-link {
   display: flex;
   align-items: center;
@@ -100,6 +106,14 @@ body {
   transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
 }
 
+.contact-button-pill {
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px 14px;
+  background: rgba(15, 23, 42, 0.98);
+  border: 1px solid rgba(15, 23, 42, 1);
+}
+
 .contact-button-link ion-icon {
   font-size: 1.1rem;
 }
@@ -112,11 +126,23 @@ body {
 
 /* navbar */
 .navbar {
-  background: rgba(10, 15, 30, 0.96);
+  background: rgba(15, 23, 42, 0.98);
   border-radius: 16px;
-  padding: 10px 16px;
-  margin-bottom: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 8px 18px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(31, 41, 55, 1);
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e5e7eb;
 }
 
 .navbar-list {
@@ -124,14 +150,14 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 12px;
+  gap: 8px;
 }
 
 .navbar-link {
   border: none;
   background: transparent;
-  color: #d1d5db;
-  padding: 6px 14px;
+  color: #9ca3af;
+  padding: 6px 16px;
   border-radius: 999px;
   cursor: pointer;
   font-size: 0.85rem;
@@ -140,7 +166,7 @@ body {
 }
 
 .navbar-link.active {
-  background: rgba(79, 70, 229, 0.9);
+  background: rgba(79, 70, 229, 0.95);
   color: #f9fafb;
 }
 
@@ -158,10 +184,10 @@ body {
   border-radius: 16px;
   padding: 20px;
   margin-bottom: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(31, 41, 55, 1);
 }
 
-/* card hover like examples */
+/* card hover */
 .card {
   background:
     radial-gradient(circle at top left, rgba(59, 130, 246, 0.16), transparent 55%),
@@ -223,11 +249,10 @@ p {
 }
 
 .blog-post,
-.timeline-item,
-.project-item {
-  padding: 0;
+.timeline-item {
+  padding: 10px 12px;
   border-radius: 10px;
-  background: transparent; 
+  background: rgba(15, 23, 42, 0.95);
 }
 
 /* skills */
@@ -284,16 +309,11 @@ p {
   transform: translateY(-1px);
 }
 
-/* responsive */
-@media (max-width: 900px) {
-  .layout {
-    flex-direction: column;
-    padding: 16px;
-  }
-
-  .sidebar-column {
-    width: 100%;
-  }
+/* projects clickable cards */
+.project-item {
+  padding: 0;
+  border-radius: 10px;
+  background: transparent;
 }
 
 .project-link {
@@ -311,7 +331,19 @@ p {
 }
 
 .project-link:hover {
-  background: rgba(79, 70, 229, 0.8);          /* same as contact-button-link:hover */
+  background: rgba(79, 70, 229, 0.8);
   border-color: rgba(129, 140, 248, 0.7);
   transform: translateY(-1px);
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .sidebar-column {
+    width: 100%;
+  }
 }
