@@ -295,3 +295,12 @@ p {
     width: 100%;
   }
 }
+.project-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-link:hover .h3 {
+  text-decoration: underline;
+}
