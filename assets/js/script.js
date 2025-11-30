@@ -14,9 +14,9 @@ window.addEventListener("DOMContentLoaded", () => {
       scaleMobile: 1.0,
       color: 0x705cff,
       backgroundColor: 0x151515,
-      points: 4.0,
-      maxDistance: 14.0,
-      spacing: 20.0,
+      points: 2.0,
+      maxDistance: 4.0,
+      spacing: 40.0,
       showDots: true, 
     });
   }
