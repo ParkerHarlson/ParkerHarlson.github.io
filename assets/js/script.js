@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
       points: 20.0,
       maxDistance: 18.0,
       spacing: 28.0,
-      showDots: true 
+      showDots: true, 
     });
   }
 
