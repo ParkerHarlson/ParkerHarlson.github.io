@@ -59,21 +59,46 @@
 
     <!-- MAIN CONTENT -->
     <div class="main-content">
-      <!-- NAVBAR -->
+      <!-- NAVBAR: animated SVG border -->
       <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link="about">about</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="projects">projects</button>
-          </li>
-        </ul>
+        <div class="navbar__container">
+          <a href="#" class="navbar__brand">Parker Harlson</a>
+
+          <nav class="navbar__nav" id="main-nav">
+            <ul class="nav-list">
+              <li>
+                <button class="nav-link navbar-link active" data-nav-link="about">
+                  about
+                  <svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none">
+                    <rect width="100%" height="100%" rx="8"></rect>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="nav-link navbar-link" data-nav-link="projects">
+                  projects
+                  <svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none">
+                    <rect width="100%" height="100%" rx="8"></rect>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="navbar__mobile-toggle" id="mobile-toggle" aria-label="Open Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+            </svg>
+          </button>
+        </div>
       </nav>
+
+      <!-- mobile slide-out menu -->
+      <div class="mobile-menu-pane" id="mobile-menu-pane"></div>
 
       <!-- ABOUT (default / active) -->
       <article class="page about active" data-page="about">
-        <!-- About Me -->
         <section class="section card">
           <h2 class="h2">About Me</h2>
           <p>
@@ -86,7 +111,6 @@
           </p>
         </section>
 
-        <!-- Education -->
         <section class="section card">
           <h3 class="h3">Education</h3>
           <ul class="timeline-list">
@@ -98,7 +122,6 @@
           </ul>
         </section>
 
-        <!-- Certifications (chips) -->
         <section class="section card">
           <h3 class="h3">Certifications</h3>
           <ul class="chip-list">
@@ -113,7 +136,6 @@
           </ul>
         </section>
 
-        <!-- Technical Skills -->
         <section class="section card">
           <h3 class="h3">Technical Skills</h3>
           <ul class="skills-list">
@@ -147,7 +169,6 @@
           </ul>
         </section>
 
-        <!-- Professional Skills -->
         <section class="section card">
           <h3 class="h3">Professional Skills</h3>
           <ul class="skills-list">
