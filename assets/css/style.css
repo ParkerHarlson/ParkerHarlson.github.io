@@ -112,25 +112,11 @@ body {
 
 /* navbar */
 .navbar {
-<<<<<<< HEAD
-  background: rgba(5, 8, 22, 0.98);   /* darker bar */
-  border-radius: 16px;
-  padding: 8px 12px;
-  margin-bottom: 20px;
-  border: 1px solid rgba(31, 41, 55, 1);
-}
-
-.navbar-inner {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;       /* tabs start near left edge */
-=======
   background: rgba(10, 15, 30, 0.96);
   border-radius: 16px;
   padding: 10px 16px;
   margin-bottom: 16px;
   border: 1px solid rgba(255, 255, 255, 0.06);
->>>>>>> parent of 27d0c18 (majorUpdate)
 }
 
 .navbar-list {
@@ -141,37 +127,22 @@ body {
   gap: 12px;
 }
 
-.navbar-item {
-  margin: 0;
-}
-
 .navbar-link {
   border: none;
   background: transparent;
-<<<<<<< HEAD
-  color: #e5e7eb;
-  padding: 6px 18px;
-  border-radius: 999px;             /* pill like Blake's */
-=======
   color: #d1d5db;
   padding: 6px 14px;
   border-radius: 999px;
->>>>>>> parent of 27d0c18 (majorUpdate)
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: lowercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
 }
 
 .navbar-link.active {
-<<<<<<< HEAD
-  background: rgba(79, 70, 229, 1);  /* bright pill */
-=======
   background: rgba(79, 70, 229, 0.9);
->>>>>>> parent of 27d0c18 (majorUpdate)
   color: #f9fafb;
 }
-
 
 /* pages & sections */
 .page {
