@@ -126,18 +126,17 @@ body {
 
 /* navbar */
 .navbar {
-  background: rgba(10, 15, 30, 0.98);
+  background: rgba(5, 8, 22, 0.98);   /* darker bar */
   border-radius: 16px;
-  padding: 0;
+  padding: 8px 12px;
   margin-bottom: 20px;
   border: 1px solid rgba(31, 41, 55, 1);
-  overflow: hidden;                 /* rounded bar like image 1 */
 }
 
 .navbar-inner {
   display: flex;
-  justify-content: flex-end;        /* tabs to the right */
-  align-items: stretch;
+  align-items: center;
+  justify-content: flex-start;       /* tabs start near left edge */
 }
 
 .navbar-list {
@@ -145,6 +144,7 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
+  gap: 8px;
 }
 
 .navbar-item {
@@ -154,19 +154,20 @@ body {
 .navbar-link {
   border: none;
   background: transparent;
-  color: #d1d5db;
-  padding: 14px 28px;
-  font-size: 0.9rem;
+  color: #e5e7eb;
+  padding: 6px 18px;
+  border-radius: 999px;             /* pill like Blake's */
   cursor: pointer;
+  font-size: 0.9rem;
   text-transform: lowercase;
   letter-spacing: 0.04em;
-  border-radius: 0;                 /* flat inside the bar */
 }
 
 .navbar-link.active {
-  background: rgba(31, 41, 55, 1);
+  background: rgba(79, 70, 229, 1);  /* bright pill */
   color: #f9fafb;
 }
+
 
 /* pages & sections */
 .page {
