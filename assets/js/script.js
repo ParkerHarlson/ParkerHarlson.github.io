@@ -12,18 +12,16 @@ window.addEventListener("DOMContentLoaded", () => {
       minWidth: 200.0,
       scale: 1.0,
       scaleMobile: 1.0,
-
-      // sparse gray + blue look
-      color: 0x1d9bf0,
+      color: 0x705cff,
       backgroundColor: 0x20252b,
-      points: 4.0,
+      points: 8.0,
       maxDistance: 18.0,
-      spacing: 28.0,
-      showDots: true
+      spacing: 18.0,
+      showDots: true, 
     });
   }
 
-  // Nav switching between about / projects
+  // Nav switching
   const navButtons = document.querySelectorAll(".navbar-link");
   const pages = document.querySelectorAll(".page");
 
