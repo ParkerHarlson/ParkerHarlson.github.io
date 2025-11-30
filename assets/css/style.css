@@ -225,9 +225,9 @@ p {
 .blog-post,
 .timeline-item,
 .project-item {
-  padding: 10px 12px;
+  padding: 0;
   border-radius: 10px;
-  background: rgba(15, 23, 42, 0.95);
+  background: transparent; 
 }
 
 /* skills */
