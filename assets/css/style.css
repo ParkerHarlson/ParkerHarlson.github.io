@@ -126,23 +126,18 @@ body {
 
 /* navbar */
 .navbar {
-  background: rgba(15, 23, 42, 0.98);
+  background: rgba(10, 15, 30, 0.98);
   border-radius: 16px;
-  padding: 8px 18px;
+  padding: 0;
   margin-bottom: 20px;
   border: 1px solid rgba(31, 41, 55, 1);
+  overflow: hidden;                 /* rounded bar like image 1 */
 }
 
 .navbar-inner {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar-title {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #e5e7eb;
+  justify-content: flex-end;        /* tabs to the right */
+  align-items: stretch;
 }
 
 .navbar-list {
@@ -150,23 +145,26 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 8px;
+}
+
+.navbar-item {
+  margin: 0;
 }
 
 .navbar-link {
   border: none;
   background: transparent;
-  color: #9ca3af;
-  padding: 6px 16px;
-  border-radius: 999px;
+  color: #d1d5db;
+  padding: 14px 28px;
+  font-size: 0.9rem;
   cursor: pointer;
-  font-size: 0.85rem;
   text-transform: lowercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
+  border-radius: 0;                 /* flat inside the bar */
 }
 
 .navbar-link.active {
-  background: rgba(79, 70, 229, 0.95);
+  background: rgba(31, 41, 55, 1);
   color: #f9fafb;
 }
 
