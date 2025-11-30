@@ -112,7 +112,7 @@ body {
 
 /* navbar */
 .navbar {
-  background: rgba(5, 8, 22, 0.98);  /* darker bar */
+  background: rgba(5, 8, 22, 0.98);
   border-radius: 16px;
   padding: 8px 12px;
   margin-bottom: 20px;
@@ -136,7 +136,7 @@ body {
   background: transparent;
   color: #e5e7eb;
   padding: 6px 18px;
-  border-radius: 999px;           /* pill style */
+  border-radius: 999px;      /* pill style */
   cursor: pointer;
   font-size: 0.9rem;
   text-transform: lowercase;
