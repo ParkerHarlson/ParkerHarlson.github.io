@@ -63,10 +63,7 @@
       <nav class="navbar" role="navigation" aria-label="Main navigation">
         <ul class="navbar-list">
           <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link="home">home</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="about">about</button>
+            <button class="navbar-link active" data-nav-link="about">about</button>
           </li>
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link="projects">projects</button>
@@ -74,31 +71,8 @@
         </ul>
       </nav>
 
-      <!-- HOME -->
-      <article class="page home active" data-page="home">
-        <section class="section card">
-          <h2 class="h2">What’s New</h2>
-          <ul class="blog-posts-list">
-            <li class="blog-post">
-              <h3 class="h3">Cloud Honeypot Lab on GCP</h3>
-              <p>
-                Deployed a T-Pot honeypot in Google Cloud, collected attack telemetry, and analyzed SSH / web attacks
-                to understand common techniques and sources.
-              </p>
-            </li>
-            <li class="blog-post">
-              <h3 class="h3">Home SOC Detection Lab</h3>
-              <p>
-                Built a mini-SOC lab with centralized logging, basic detections, and threat-hunting playbooks based on
-                simulated endpoint attacks.
-              </p>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!-- ABOUT -->
-      <article class="page about" data-page="about">
+      <!-- ABOUT (default / active) -->
+      <article class="page about active" data-page="about">
         <!-- About Me -->
         <section class="section card">
           <h2 class="h2">About Me</h2>
